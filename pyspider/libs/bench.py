@@ -69,7 +69,7 @@ def bench_test_taskdb(taskdb):
             taskdb.insert(task['project'], task['taskid'], task)
         end_time = time.time()
         cost_time = end_time - start_time
-        logger.info("cost %.2fs, %.2f/s %.3fms",
+        logger.info("cost %.1fs, %.2f/s %.3fms",
                     cost_time, n * 1.0 / cost_time, cost_time / n * 1000)
 
     def test_update(n, start=0):
